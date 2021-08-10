@@ -16,87 +16,104 @@
   </head>
   <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand bg-warning">
-                    <div class="col-1">
+        <div class="row bg-warning">
+                    <div class="col-1 align-self-center pl-4">
                         <div class="navbar-header">
                             <a href="#" class="navbar-brand"><img src="./img/Bass-Clef.png" style="width: 30px;"></a>  
                         </div>
                     </div>
                     <div class="col-8">
-                        <div class="navbar-nav justify-content-center nav-pills">
-                            <li class="nav-item"><a href="#" class="nav-link text-dark">Item 1</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-dark">Item 2</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-dark">Item 3</a></li>
-                        </div>
+                        <!-- Per dispositius grans -->
+                        <nav class="navbar navbar-expand justify-content-center bg-warning d-none d-sm-block">
+                            <div class="navbar-nav nav-pills">
+                                <li class="nav-item"><a href="#" class="nav-link text-dark">NOVETATS</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-dark">Blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-dark">Contacte</a></li>
+                            </div>
+                        </nav>
+                        <!-- Per dispositius petits -->
+                        <nav class="navbar navbar-expand justify-content-center bg-warning d-block d-sm-none">
+                            <div class="navbar-nav  nav-pills">
+                                <li class="nav-item"><a href="#" class="nav-link text-dark">Novetats</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-dark">Blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-dark">Contacte</a></li>
+                            </div>
+                        </nav>
                    </div>
-                   <div class="col-3-md-4 ml-auto">
+                   <div class="col-3 align-self-center text-center">
                        <!-- MODAL LOGIN -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mimodal-L">LOGIN</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mimodal-R">REGISTRE</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#mimodal-L">LOGIN</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#mimodal-R">REGISTRE</button>
                         <div class="modal fade" id="mimodal-L">
                             <div class="modal-dialog">
-                                <div class="modal-content">
+                                <div class="modal-content text-left">
                                     
                                     <!-- HEADER -->
                                     <div class="modal-header">
                                         <h4 class="modal-title">
                                             Header
                                         </h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
                                     </div>
                                     <!-- BODY -->
                                     <div class="modal-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nemo vel distinctio aliquid aliquam iste quibusdam? Similique vitae a labore ea impedit, repellendus, laudantium explicabo cupiditate nam, commodi modi nisi?
+                                        <div class="mail-cont">
+                                            <label for="" class="form-label">Email</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <br>
+                                        <div class="pass-cont">
+                                            <label for="" class="form-label">Password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
                                     </div>
-
-
                                     <!-- FOOTER MODAL -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal fade" id="mimodal-R">
                             <div class="modal-dialog">
-                                <div class="modal-content">
+                                <div class="modal-content text-left">
                                     
                                     <!-- HEADER -->
                                     <div class="modal-header">
                                         <h4 class="modal-title">
                                             Header
                                         </h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
                                     </div>
                                     <!-- BODY -->
                                     <div class="modal-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nemo vel distinctio aliquid aliquam iste quibusdam? Similique vitae a labore ea impedit, repellendus, laudantium explicabo cupiditate nam, commodi modi nisi?
+                                        <div class="mail-cont">
+                                            <label for="" class="form-label">Nom</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <br>
+                                        <div class="mail-cont">
+                                            <label for="" class="form-label">Cognom</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <br>
+                                        <div class="mail-cont">
+                                            <label for="" class="form-label">Email</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <button class="btn btn-primary mt-2">Enviar</button>
                                     </div>
-
-
                                     <!-- FOOTER MODAL -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                 </div>
-                    <!-- <div class="mail-cont">
-                        <label for="" class="form-label">Email</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="pass-cont">
-                        <label for="" class="form-label">Password</label>
-                        <input type="password" class="form-control">
-                    </div> -->
-                </nav>    
-            </div>
         </div>
     </div>
-
+    <!-- CDN comentat -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
